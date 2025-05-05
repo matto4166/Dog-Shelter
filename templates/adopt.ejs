@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Dog Shelter Adoption</title>
+    <link rel="stylesheet" href="dogShelter.css" type="text/css">
+</head>
+
+<body>
+	<h1>Adoption Application</h1>
+    <hr>
+    <form action="<%- form %>" method="post">
+        <h2>What breed are you looking for?</h2>
+        I'm looking for a: 
+        <select id="preference" name="preference">
+            <option value="" selected disabled hidden>Select a breed</option>
+            <option value="affenpinscher" name="affenpinscher">affenpinscher</option>
+            <option value="african" name="african">african</option>
+            <option value="airedale" name="airedale">airedale</option>
+            <option value="akita" name="akita">akita</option>
+            <option value="appenzeller" name="appenzeller">appenzeller</option>
+            <option value="australian" name="australian">australian</option>
+            <option value="bakharwal" name="bakharwal">bakharwal</option>
+            <option value="basenji" name="basenji">basenji</option>
+            <option value="beagle" name="beagle">beagle</option>
+            <option value="bluetick" name="bluetick">bluetick</option>
+            <option value="borzoi" name="borzoi">borzoi</option>
+            <option value="bouvier" name="bouvier">bouvier</option>
+            <option value="boxer" name="boxer">boxer</option>
+            <option value="brabancon" name="brabancon">brabancon</option>
+            <option value="briard" name="briard">briard</option>
+            <option value="buhund" name="buhund">buhund</option>
+            <option value="bulldog" name="bulldog">bulldog</option>
+            <option value="bullterrier" name="bullterrier">bullterrier</option>
+            <option value="cattledog" name="cattledog">cattledog</option>
+            <option value="cavapoo" name="cavapoo">cavapoo</option>
+            <option value="chihuahua" name="chihuahua">chihuahua</option>
+            <option value="chippiparai" name="chippiparai">chippiparai</option>
+            <option value="chow" name="chow">chow</option>
+            <option value="clumber" name="clumber">clumber</option>
+            <option value="cockapoo" name="cockapoo">cockapoo</option>
+            <option value="collie" name="collie">collie</option>
+            <option value="coonhound" name="coonhound">coonhound</option>
+            <option value="corgi" name="corgi">corgi</option>
+            <option value="cotondetulear" name="cotondetulear">cotondetulear</option>
+            <option value="dachshund" name="dachshund">dachshund</option>
+            <option value="dalmatian" name="dalmatian">dalmatian</option>
+            <option value="dane" name="dane">dane</option>
+            <option value="danish" name="danish">danish</option>
+            <option value="deerhound" name="deerhound">deerhound</option>
+            <option value="dhole" name="dhole">dhole</option>
+            <option value="dingo" name="dingo">dingo</option>
+            <option value="doberman" name="doberman">doberman</option>
+            <option value="elkhound" name="elkhound">elkhound</option>
+            <option value="entlebucher" name="entlebucher">entlebucher</option>
+            <option value="eskimo" name="eskimo">eskimo</option>
+            <option value="finnish" name="finnish">finnish</option>
+            <option value="frise" name="frise">frise</option>
+            <option value="gaddi" name="gaddi">gaddi</option>
+            <option value="germanshepherd" name="germanshepherd">germanshepherd</option>
+            <option value="greyhound" name="greyhound">greyhound</option>
+            <option value="groenendael" name="groenendael">groenendael</option>
+            <option value="havanese" name="havanese">havanese</option>
+            <option value="hound" name="hound">hound</option>
+            <option value="husky" name="husky">husky</option>
+            <option value="keeshond" name="keeshond">keeshond</option>
+            <option value="kelpie" name="kelpie">kelpie</option>
+            <option value="kombai" name="kombai">kombai</option>
+            <option value="komondor" name="komondor">komondor</option>
+            <option value="kuvasz" name="kuvasz">kuvasz</option>
+            <option value="labradoodle" name="labradoodle">labradoodle</option>
+            <option value="labrador" name="labrador">labrador</option>
+            <option value="leonberg" name="leonberg">leonberg</option>
+            <option value="lhasa" name="lhasa">lhasa</option>
+            <option value="malamute" name="malamute">malamute</option>
+            <option value="malinois" name="malinois">malinois</option>
+            <option value="maltese" name="maltese">maltese</option>
+            <option value="mastiff" name="mastiff">mastiff</option>
+            <option value="mexicanhairless" name="mexicanhairless">mexicanhairless</option>
+            <option value="mix" name="mix">mix</option>
+            <option value="mountain" name="mountain">mountain</option>
+            <option value="mudhol" name="mudhol">mudhol</option>
+            <option value="newfoundland" name="newfoundland">newfoundland</option>
+            <option value="otterhound" name="otterhound">otterhound</option>
+            <option value="ovcharka" name="ovcharka">ovcharka</option>
+            <option value="papillon" name="papillon">papillon</option>
+            <option value="pariah" name="pariah">pariah</option>
+            <option value="pekinese" name="pekinese">pekinese</option>
+            <option value="pembroke" name="pembroke">pembroke</option>
+            <option value="pinscher" name="pinscher">pinscher</option>
+            <option value="pitbull" name="pitbull">pitbull</option>
+            <option value="pointer" name="pointer">pointer</option>
+            <option value="pomeranian" name="pomeranian">pomeranian</option>
+            <option value="poodle" name="poodle">poodle</option>
+            <option value="pug" name="pug">pug</option>
+            <option value="puggle" name="puggle">puggle</option>
+            <option value="pyrenees" name="pyrenees">pyrenees</option>
+            <option value="rajapalayam" name="rajapalayam">rajapalayam</option>
+            <option value="redbone" name="redbone">redbone</option>
+            <option value="retriever" name="retriever">retriever</option>
+            <option value="ridgeback" name="ridgeback">ridgeback</option>
+            <option value="rottweiler" name="rottweiler">rottweiler</option>
+            <option value="saluki" name="saluki">saluki</option>
+            <option value="samoyed" name="samoyed">samoyed</option>
+            <option value="schipperke" name="schipperke">schipperke</option>
+            <option value="schnauzer" name="schnauzer">schnauzer</option>
+            <option value="segugio" name="segugio">segugio</option>
+            <option value="setter" name="setter">setter</option>
+            <option value="sharpei" name="sharpei">sharpei</option>
+            <option value="sheepdog" name="sheepdog">sheepdog</option>
+            <option value="shiba" name="shiba">shiba</option>
+            <option value="shihtzu" name="shihtzu">shihtzu</option>
+            <option value="spaniel" name="spaniel">spaniel</option>
+            <option value="spitz" name="spitz">spitz</option>
+            <option value="springer" name="springer">springer</option>
+            <option value="stbernard" name="stbernard">stbernard</option>
+            <option value="terrier" name="terrier">terrier</option>
+            <option value="tervuren" name="tervuren">tervuren</option>
+            <option value="vizsla" name="vizsla">vizsla</option>
+            <option value="waterdog" name="waterdog">waterdog</option>
+            <option value="weimaraner" name="weimaraner">weimaraner</option>
+            <option value="whippet" name="whippet">whippet</option>
+            <option value="wolfhound" name="wolfhound">wolfhound</option>
+        </select>
+        <br> <br>
+        <img id="dogPic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYfXRaMRCOLGwgFPbyL1J-73hO54HzTErLg&s" alt="Dog Picture">
+        <br> <br>
+        <input type="text" name="photoUrl" id="PhotoBeingDisplayed" value ="InitialImage.jpg" hidden>
+        I'm going to name this dog: <input type="text" name="name" required>
+        <br> <br>
+        <input type="submit">
+        <hr>
+        <a href="/">Home</a>
+    </form>
+
+    <script>
+        document.getElementById("preference").onchange = displayDogBreedImage;
+
+        async function displayDogBreedImage() {
+            let preference = document.getElementById("preference");
+            let breedName = preference[preference.selectedIndex].value;
+
+            let response = await fetch(`https://dog.ceo/api/breed/${breedName}/images/random`);
+            let json = await response.json();
+
+            document.querySelector("#PhotoBeingDisplayed").value = json.message; 
+            document.querySelector("#dogPic").src = json.message;
+        }
+
+        window.onsubmit = validateForm;
+
+        function validateForm() {
+            let preference = document.getElementById("preference");
+            if (preference.options[preference.selectedIndex].value === "") {
+                alert("Please select a breed");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

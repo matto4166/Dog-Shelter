@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Dog Shelter Adoption</title>
+    <link rel="stylesheet" href="dogShelter.css" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+        html {
+            background-color:aliceblue;
+            font-family: "IBM Plex Serif";
+        }
+
+        h1 {
+            color:navy;
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+	<h1>Processing Adoption Application</h1>
+    <hr>
+    
+    <strong>Name: </strong><%- name %><br>
+    <strong>Breed: </strong><%- breed %><br>
+    <img src="<%- photoUrl %>">
+    <br>
+    <strong>Image Url: </strong><%- photoUrl %><br>
+	<hr>
+    <a href="/">Home</a>
+</body>
+
+</html>

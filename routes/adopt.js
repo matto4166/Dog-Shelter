@@ -14,7 +14,7 @@ app.use(express.static("public"));
 
 router.get("/", (req, res) => {
     const variables = {
-        form: `http://localhost:5000/adopt/processAdoption`
+        form: `/adopt/processAdoption`
     }
 
     res.render("adopt", variables);
